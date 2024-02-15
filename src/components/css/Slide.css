@@ -1,0 +1,142 @@
+.background-div {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../image/pxfuel\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .name-sec {
+  margin-top: 200px;
+  margin-left: 40%;
+  line-height: 15px;
+  background: transparent;
+  width: 350px;
+  padding: 10px 20px;
+  height: 200px;
+}
+
+.name-sec h1 {
+  color: #eaeaea;
+}
+
+.button-sec {
+  margin-left: 46%;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  text-decoration: none;
+  color: #eaeaea;
+  background-color: #02131e;
+  padding: 10px 10px;
+  margin-left: 30px;
+  border-radius: 15px;
+  height: 25px;
+  width: 250px;
+}
+
+.link:hover {
+  color: #041119;
+  background-color: #eaeaea6f;
+}
+
+span {
+  background-color: #04111989;
+}
+
+.faInstagram,
+.faLinkedin,
+.solidEnvelope,
+.faFacebook {
+  color: #eaeaea;
+} */
+
+.name-sec {
+  text-align: center; /* Center align text */
+  margin-top: 160px; 
+  line-height: 1.8em;
+
+}
+
+.name-sec h3 {
+  font-size: 1.2em; /* Adjust as needed */
+}
+.name-sec p {
+  font-size: 1.2em;
+  color:#041119;
+  text-shadow: 2px 2px 2px #404141;
+ /* Adjust as needed */
+}
+
+.name-sec h1 {
+  font-size: 2em; /* Adjust as needed */
+  margin-bottom: 10px;
+  text-transform: uppercase; 
+  font-family:'Lucida Console';
+  color: #eaeaea;
+  text-shadow: 2px 2px 2px #000000;
+  /* background: linear-gradient(90deg,#eaeaea,#315f7c,#3983b2); */
+  /* color: transparent; */
+  /* background-clip: text;  */
+ 
+}
+
+.name-sec h2 {
+  font-size: 1.5em; /* Adjust as needed */
+  color:  #000c17; /* Apply color */
+  text-shadow: 2px 2px 2px #404141;
+}
+
+.button-sec {
+  display: flex;
+  justify-content: center; /* Center align buttons */
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.link {
+  text-decoration: none;
+  color: #eaeaea;
+  background-color: #02131e;
+  padding: 10px 20px;
+  margin: 0 10px; 
+  border-radius: 8px;
+  border:1px solid #eaeaea;; 
+}
+
+.link:hover {
+  background-color: #eaeaea2d  ;
+  border:1px solid #eaeaea;
+}
+.icon{text-align:center;
+  margin-left:43%;
+}
+
+@media only screen and (max-width: 768px) {
+  .name-sec {
+    margin-top: 100px; /* Adjust margin-top for smaller screens */
+    margin-left: 10%; /* Adjust margin-left for smaller screens */
+    width: 80%; /* Adjust width to fit smaller screens */
+  }
+  .background-div{
+    height: 90vh;
+  }
+
+  .button-sec {
+    margin-left: 20%; /* Adjust margin-left for smaller screens */
+    width: 60%; /* Adjust width to fit smaller screens */
+  }
+
+  .link {
+    margin-left: 10px; /* Adjust margin-left for smaller screens */
+    width: 100%; /* Adjust width to fit smaller screens */
+  }
+  .icon{
+    margin-left:23%;
+  }
+}
