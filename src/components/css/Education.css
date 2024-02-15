@@ -64,13 +64,24 @@ body {
 
 /* Media Queries for responsiveness */
 @media only screen and (max-width: 768px) {
-    .education h1 {
-        margin-left: 10px; /* Adjust margin for smaller screens */
+    .edu-sec{
+        margin: 20px 0px;
+    padding: 10px 20px; 
     }
-
+    .education h1 {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .education h6 {
+        color: rgb(44, 44, 111);
+        font-size: 7px;
+        line-height: 1em;
+        margin-left: -37px;
+         
+    }
     .education .edu h4 {
         color: #050223eb;
-        font-size: 14px;
+        font-size: 12px;
         /* text-decoration: underline; */
     }
 
@@ -78,6 +89,7 @@ body {
         color: #2a2929c7;
         font-size: 12px;
         letter-spacing: 1px;
+        margin-top: -20px;
     }
 
     .lableEdu {

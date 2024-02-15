@@ -2,11 +2,15 @@ import React, { Fragment } from 'react'
 import './css/Projects.css'
 import pimage from './image/portfoli.png'
 
-export const Projects = () => {
-    let projectDetailes=[{title:'Personal Portfolio',description:'Portfolio website developed with React.',link:'"https://example.com"',image:pimage},
-    {title:'Example Project',description:'This is an example project card with React.',link:'"https://example.com"'}, 
-    {title:'Example Project',description:'This is an example project card with React.',link:'"https://example.com"'}
+let projectDetailes=[{title:'Personal Portfolio',
+description:'Portfolio website developed with React.',
+link:'https://impana-b-portfolio.netlify.app/',image:pimage},
+{title:'Example Project',
+description:'This is an example project card with React.',link:'"https://example.com"'}, 
 ]
+
+export const Projects = () => {
+ 
     return (
     <> <p className='head'>My work</p><br/>
         <label className='lable'>Projects</label>

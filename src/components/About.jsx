@@ -4,11 +4,11 @@ function About() {
   return (
     <div className='about'>
       <h1 className='heading-sec'>About me</h1>
-      <p>Hello! I am IMPANA B, a recent graduate with a strong passion for becoming a Full-Stack Developer. 
-        Eager to embark on a journey of continuous learning and growth, 
-        I am excited about the dynamic world of web development.I love exploring new technologies and being a practitioner, 
-        I like to stay on top of latest trends. 
-        I try to leave every line of code I write more readable, accessible, and modular</p>
+      <p>Hello! I'm IMPANA B, a recent graduate deeply enthusiastic about evolving into a Full-Stack Developer. 
+        Ready to dive into a realm of perpetual learning, I'm thrilled by the ever-changing landscape of web development.
+         My passion extends to exploring cutting-edge technologies, and as a dedicated practitioner, I consistently track the latest trends.
+        My commitment is to ensure that every line of code I produce is not only functional but also 
+        characterized by readability, accessibility, and modularity.</p>
     </div>
   )
 }
