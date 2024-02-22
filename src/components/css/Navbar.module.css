@@ -2,15 +2,15 @@
     display: flex;
     justify-content: space-evenly;
     padding: 15px 20px;
-    margin-top: -10px;
-    background-color: #eaeaea;
+    margin-top: -8px;
+    background-color: #eaeaea33;
     position: fixed;
     list-style: none;
     width: 100%;
-
+   
 }
 
-.link,.link1 {
+.link {
     flex-wrap: wrap;
     text-decoration: none;
     color: #041119;
@@ -18,64 +18,62 @@
     padding: 10px 10px;
     text-align: center;
     font-family: monospace;
-    font-size: 0.9rem;
-}
-.link1{
-    margin-left: 400px;
-}
-.link:hover, .link1:hover{
-    border-bottom: 2px solid #292e34;
-    color: #51555a6e;
+    font-size: 0.8rem;
 }
 
-#about,
-#education,
-#skill,
-#contact {
+.l1 {
+    margin-left: 450px;
+}
+
+.link:hover {
+    border-bottom: 2px solid #434344;
+    color: #44444594;
+}
+
+#about, #education, #skill, #contact {
     border-bottom: 2px solid #292e34;
 }
-.icon{
+
+.icon {
     height: 20px;
     width: 30px;
     margin-left: 5px;
     margin-top: 5px;
-    color: white;
-   
+    color: rgb(3, 17, 39);
+    /* background-color: rgba(243, 237, 237, 0.308); */
+    
 }
+
 @media only screen and (max-width: 768px) {
-    .link1{
-        margin-left: auto;
-        font-size: 12px;
-        color: rgba(244, 244, 244, 0.756);
-        text-align: center;
+    .l1 {
+        margin-left: 0;
     }
-   .nv{
-    /* border: 2px solid green; */
-    height: 30px;
-    /* width: 30px; */
-    background: #13222c;
-   }
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        /* padding: 5px 5px; */
-        width: auto;
-        /* background: #01191958 ; */
-        background-color: #02131eb7;
-        height: 86vh;
-        position: absolute;
-        margin-top: 3px;
-        margin-left: -10px;
-       
-        /* border-radius: 10px; */
+
+    .nv {
+        height: 30px;
+        position: fixed;
         
     }
 
+    .navbar {
+        border-radius: 5px;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        background-color: #02131e89;
+        height: 20px;
+        position: static;
+        margin: 5px 10px;
+    }
+
     .link {
-        margin: 5px 0;
+        margin: auto;
         width: 100%;
         font-size: 12px;
         color: rgba(244, 244, 244, 0.756);
     }
-   
+    .link:hover {
+        border-bottom: none;
+        color: #a9a9bdbd;
+    }
 }

@@ -3,6 +3,7 @@ import axios from 'axios';
 import Icons from './Icons';
 import './css/Contact.css';
 import PopupMsg from './PopupMsg';
+import NavIcons from './NavIcons';
 
 function Contact() {
   const [details, setDetails] = useState({ name: '', email: '', message: '' });
@@ -33,6 +34,7 @@ function Contact() {
     }
     try {
       await axios.post("http://localhost:5000/submit-form", details);
+      // await axios.post('http://localhost:5000/submit-form',details)
       setDetails({ name: '', email: '', message: '' });
       setErrorMsg('Submitted successfully!');
       openPopup();
@@ -42,7 +44,8 @@ function Contact() {
   };
 
   return (
-    <div className='contact-sec'>
+ <>
+    <div className='contact-sec' id='contact'>
       <PopupMsg isOpen={isOpen} closePopup={closePopup} msg={errorMsg} style={errorMsg!=='Submitted successfully!' ? 'alert' : 'popup'} />
       <section className='contact-det'>
         <h1 className='heading'>Contact Me</h1>
@@ -54,7 +57,10 @@ function Contact() {
         <textarea name='message' placeholder='Your Message' value={details.message} onChange={handleChange} />
         <button type='submit'>SUBMIT</button>
       </form>
+      <NavIcons/>
     </div>
+    
+ </>
   );
 }
 

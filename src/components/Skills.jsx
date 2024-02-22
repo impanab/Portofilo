@@ -11,7 +11,9 @@ class:style.skill_card_odd},
 class:style.skill_card_even}]
 
 function Skills() {
-  return (<div style={{marginTop:'100px'}}>
+  
+  return (
+  <div  id='skill' className={style.skill}>
   <label className={style.lable}>HERE ARE SOME OF MY EXPERTISE</label>
   <div className={style.skill_container}>
   {skills.map((ele,i)=>{
@@ -20,7 +22,8 @@ function Skills() {
      <p style={{textAlign:'center',lineHeight:'30px',fontSize:'1rem'}}>{ele.content}</p>
    </div>
  })}
- </div></div>
+ </div>
+</div>
   )
 }
 export default Skills

@@ -1,18 +1,21 @@
 import React,{useState, useEffect} from 'react'
-// import { HashLink as Link } from 'react-router-hash-link';
-// import { Link } from 'react-router-dom'
-// import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faList } from '@fortawesome/free-solid-svg-icons'
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import nav from './css/Navbar.module.css'
-
 import List from './List'
 import Slide from './Slide'
+import About from './About'
+import Education from './Education'
+import Skills from './Skills'
+import Contact from './Contact'
+import { Projects } from './Projects'
+
+
 
 const Navbar = () => {
   const [list, setList] = useState(false);
   const [show,setShow]=useState(false)
-
 
   const showIcon=()=>{
     if(window.innerWidth<=960){
@@ -31,22 +34,24 @@ const Navbar = () => {
       setShow(false)
     } 
   }
-
-
+  
   window.addEventListener('resize',showIcon);
-
-  // console.log(show)
  
   return (
-  <>
-   <div className={nav.maindiv}>
+  <><div className={nav.maindiv} id='/'>
     <nav className={nav.nv}>  
-      {list&& <FontAwesomeIcon icon={faList} onClick={()=>{setShow(!show)}} className={nav.icon}/>}
-      {console.log(show)}
+      {list&& <FontAwesomeIcon icon={faList} onClick={()=>{setShow(!show)}} className={nav.icon}/>
+}
     {show && <List/>}
     </nav>
    </div>
-   <Slide showList={showList}/></>
+   <Slide showList={showList}/>
+   <About/>
+    <Education/>
+    <Skills/>
+    <Projects/>
+    <Contact/>
+   </>
   )
 }
 
