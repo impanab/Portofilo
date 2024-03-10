@@ -21,6 +21,8 @@
   padding: 20px;
   margin-top: 20px;
   margin-right:30px ; 
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .skill_card_odd {
@@ -32,6 +34,27 @@
   border-top: 2px solid #8cb8d3;
   border-bottom: 2px solid #8cb8d3;
  
+}
+.skill_card_even:hover,
+.skill_card_odd:hover{
+  transform: translateY(-5px);
+}
+.icon{
+  padding: 10px 10px;
+  margin-left: 41%;
+  height: 37px;
+  color: white;
+  background: #80c3ec;
+  border-radius: 40px;
+}
+
+.icon1{
+  padding: 10px 10px;
+  margin-left: 41%;
+  height: 37px;
+  color: white;
+  background: #f99045;
+  border-radius: 40px;
 }
 
 .lable {
@@ -51,13 +74,16 @@
    padding: auto;
   }
   .skill_container {
-    margin: 20px; /* Adjust margin for smaller screens */
+    margin: 20px;
   }
 
   .skill_card_even,
   .skill_card_odd {
-    width: calc(50% - 20px); /* Make cards take up 50% of the width with some margin */
-    margin: 20px 20px; /* Add margin between cards */
+    width: calc(50% - 20px); 
+    margin: 20px -9px; 
+  }
+  .icon,.icon1{
+    margin-left: 30%;
   }
   .lable{
     margin-left: 10%;

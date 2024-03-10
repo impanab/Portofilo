@@ -1,41 +1,42 @@
 .contact-sec {
     display: flex;
-    flex-direction: column; /* Change flex-direction to column for smaller screens */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #030615;
-    min-height: 100vh; /* Use min-height instead of height for better responsiveness */
+    min-height: 100vh;
 }
 
 form {
-    margin-top: 40px; /* Adjust margin-top for smaller screens */
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid whitesmoke;
-    height: auto; /* Remove fixed height */
-    width: 80%; /* Adjust width for smaller screens */
-    max-width: 500px; /* Limit maximum width */
+    height: auto;
+    width: 80%;
+    max-width: 500px;
     padding: 20px;
     background-color: #030615;
     border-radius: 10px;
 }
 
-input, textarea {
+input,
+textarea {
     border-radius: 10px;
     padding: 10px 20px;
-    width: 100%; /* Make inputs and textarea take full width */
-    margin: 10px 0; /* Adjust margin for smaller screens */
-    box-sizing: border-box; /* Include padding in width calculation */
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
 }
 
 button {
     height: 50px;
-    width: 50%; /* Make button take 50% width */
-    max-width: 200px; /* Limit maximum width */
-    margin-top: 20px; /* Adjust margin-top for smaller screens */
-    padding: 10px 20px;
+    width: 50%;
+    max-width: 200px;
+    margin-top: 20px;
+    padding: 10px 10px;
     font-weight: bold;
     background-color: rgba(9, 208, 9, 0.99);
     border-radius: 10px;
@@ -43,17 +44,17 @@ button {
 
 .heading {
     color: #ecf8ff;
-    font-size: 24px; /* Adjust font-size for smaller screens */
+    font-size: 24px;
     font-weight: 700;
-    text-align: center; /* Center align text */
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1.5;
-    margin: 20px 0; /* Adjust margin for smaller screens */
+    margin: 20px 0;
 }
 
 @media only screen and (max-width: 768px) {
     .heading {
-        font-size: 20px; /* Adjust font-size for smaller screens */
+        font-size: 20px;
     }
 }

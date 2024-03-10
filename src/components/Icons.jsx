@@ -1,4 +1,4 @@
-import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
@@ -17,6 +17,8 @@ const Icons = () => {
         <Link to='https://www.instagram.com/impana_basavaraj?igsh=Y3RteDcwYnJtMmFx' className={icons.link}>
             <FontAwesomeIcon icon={faInstagram}/>
         </Link>
+        <Link to="https://www.github.com/impanab" className={icons.link}> 
+        <FontAwesomeIcon icon={faGithub}/></Link>
     </div>
   )
 }

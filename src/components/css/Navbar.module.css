@@ -1,19 +1,19 @@
 .navbar {
+    margin-top: 20%;
     display: flex;
     justify-content: space-evenly;
-    padding: 15px 20px;
-    margin-top: -8px;
-    background-color: #eaeaea33;
+    padding: 15px 5px;
+    margin-top: -9px;
+    background-color:  #0016257e;
     position: fixed;
     list-style: none;
-    width: 100%;
-   
+    width: 100%;  
 }
 
 .link {
     flex-wrap: wrap;
     text-decoration: none;
-    color: #041119;
+    color: #f7f7f7;
     font-weight: 500;
     padding: 10px 10px;
     text-align: center;
@@ -40,7 +40,8 @@
     margin-left: 5px;
     margin-top: 5px;
     color: rgb(3, 17, 39);
-    /* background-color: rgba(243, 237, 237, 0.308); */
+    position: fixed;
+    
     
 }
 
@@ -63,7 +64,7 @@
         background-color: #02131e89;
         height: 20px;
         position: static;
-        margin: 5px 10px;
+        margin: 30px 10px;
     }
 
     .link {

@@ -4,7 +4,7 @@ import './css/About.css'
 function About({showList}) {
   return (
  <>
-    <div className='about' >
+    <div className='about'  onClick={showList}>
       <h1 className='heading-sec'>About me</h1>
       <p>Hello! I'm IMPANA B, a recent graduate deeply enthusiastic about evolving into a Full-Stack Developer. 
         Ready to dive into a realm of perpetual learning, I'm thrilled by the ever-changing landscape of web development.

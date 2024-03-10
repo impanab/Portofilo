@@ -55,7 +55,7 @@ function Contact() {
         <input type='text' name='name' placeholder='Your Name' value={details.name} onChange={handleChange} />
         <input type='text' name='email' placeholder='Your Email' value={details.email} onChange={handleChange} />
         <textarea name='message' placeholder='Your Message' value={details.message} onChange={handleChange} />
-        <button type='submit'>SUBMIT</button>
+        <button type='submit'>SEND</button>
       </form>
       <NavIcons/>
     </div>

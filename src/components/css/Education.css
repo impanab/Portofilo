@@ -12,14 +12,18 @@ body {
 .edu-sec {
     display: flex;
     justify-content: space-between;
-    margin: 20px 20px;
-    padding: 50px 20px;
+    margin: 20px 70px;
+    padding: 30px 20px;
     background: #fffcfc;
     border-bottom: 2px solid rgba(135, 207, 235, 0.584);
     width: auto;
     height: auto;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
-
+.edu-sec:hover {
+    transform: translatey(-5px);
+}
 .education {
     margin: 40px;
     background: #bbc6cd19;
@@ -37,7 +41,6 @@ body {
     color: #050223eb;
     letter-spacing: 1.2px;
     font-size: 18px;
-    /* text-decoration: underline; */
 }
 
 .education .edu p {
@@ -62,11 +65,10 @@ body {
     line-height: 1.8;
 }
 
-/* Media Queries for responsiveness */
 @media only screen and (max-width: 768px) {
-    .edu-sec{
+    .edu-sec {
         margin: 20px 0px;
-    padding: 10px 20px; 
+        padding: 10px 20px;
     }
     .education h1 {
         margin-left: 10px;
@@ -77,27 +79,22 @@ body {
         font-size: 7px;
         line-height: 1em;
         margin-left: -37px;
-         
     }
     .education .edu h4 {
         color: #050223eb;
         font-size: 12px;
-        /* text-decoration: underline; */
     }
-
     .education .edu p {
         color: #2a2929c7;
         font-size: 12px;
         letter-spacing: 1px;
         margin-top: -20px;
     }
-
     .lableEdu {
-        margin-left: 10px; /* Adjust margin for smaller screens */
+        margin-left: 10px;
     }
-
     .edu {
-        line-height: normal; /* Resetting line-height for responsiveness */
-        padding: 5px; /* Adjust padding for smaller screens */
+        line-height: normal;
+        padding: 5px;
     }
 }
